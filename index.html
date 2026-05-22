@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Считаем баллы по математике</title>
 <meta name="description" content="Калькулятор итоговых баллов · Высшая математика · Лагунова М.В. · 1 курс, 2 семестр">
-<meta property="og:title" content="Считаем баллы по математике 🧮">
+<meta property="og:title" content="Считаем баллы по математике">
 <meta property="og:description" content="Калькулятор итоговых баллов · Лагунова М.В. · 1 курс, 2 семестр · Итог 0–144 балла">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#102C26">
@@ -621,9 +621,9 @@ function calc(){
     document.getElementById('totalScore').textContent=totalScore.toFixed(2);
     document.getElementById('totalPct').textContent=totalPct.toFixed(2);
     let g,gd,gc;
-    if(totalPct>=85){g='5';gd='Отлично';gc='#b8e8c8'}
-    else if(totalPct>=70){g='4';gd='Хорошо';gc='#f0ddc0'}
-    else if(totalPct>=55){g='3';gd='Удовлетворительно';gc='rgba(232,238,247,0.7)'}
+    if(totalPct>=90){g='5';gd='Отлично';gc='#b8e8c8'}
+    else if(totalPct>=76){g='4';gd='Хорошо';gc='#f0ddc0'}
+    else if(totalPct>=61){g='3';gd='Удовлетворительно';gc='rgba(232,238,247,0.7)'}
     else{g='2';gd='Неудовлетворительно';gc='#f0b8b0'}
     document.getElementById('gradeVal').textContent=g;
     document.getElementById('gradeVal').style.color=gc;
